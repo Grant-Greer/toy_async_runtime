@@ -99,7 +99,6 @@ where
     }
 }
 
-// Simple waker implementation
 struct SimpleWaker {
     thread: thread::Thread,
 }
@@ -110,7 +109,6 @@ impl Wake for SimpleWaker {
     }
 }
 
-// Counter future implementation
 struct Counter {
     counter: Arc<AtomicU64>,
     max: u64,
